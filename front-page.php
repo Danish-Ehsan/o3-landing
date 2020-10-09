@@ -42,7 +42,7 @@ get_header();
 						<h3 class="logo-section__title"><?php echo $logos_section_title; ?></h3>
 						<div class="logos-gallery-cont">
 							<?php foreach( $logo_images as $logo_image) {
-								echo '<div class="logo-image-cont" style="background-image: ' . $logo_image . '"></div>';
+								echo '<div class="logo-image-cont" style="background-image: url(' . $logo_image . ')"></div>';
 							}
 							?>
 						</div>

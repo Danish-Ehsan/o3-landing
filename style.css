@@ -1,9 +1,7 @@
 /*!
 Theme Name: Operation O3
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Author: Danish Ehsan
+Description: One-Page theme for Operations O3 landing page
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
@@ -47,6 +45,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
+
+# Custom Styles
 
 --------------------------------------------------------------*/
 
@@ -966,4 +966,193 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Custom Styles
+--------------------------------------------------------------*/
+
+html, body {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	color: #000;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0 30px;
+}
+
+h2 {
+	font-size: 24px;
+	max-width: 750px;
+	margin: 50px auto 30px auto;
+	line-height: 1.4;
+}
+
+p {
+	max-width: 750px;
+	margin: 25px auto;
+}
+
+a {
+	color: #e65300;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e65300;
+}
+
+
+
+
+
+
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 40px;
+}
+
+.header__logo {
+	width: 180px;
+}
+
+.header__logo a {
+	display: flex;
+	align-items: center;
+}
+
+.header__contact-btn {
+	border-radius: 0;
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 8px 28px;
+	border: none;
+	letter-spacing: 2px;
+}
+
+
+
+
+
+
+.entry-content {
+	margin: 0;
+}
+
+.main-image {
+	width: 100%;
+	margin: 0;
+}
+
+.main-image img {
+	width: 100%;
+}
+
+
+
+
+
+
+.wp-block-columns {
+	padding: 0 75px;
+	margin: 75px 0;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wp-block-column p {
+	margin: 0;
+}
+
+.wp-block-column > .wp-block-columns {
+	margin: 30px 0;
+/*	padding: 0 156px 0 0;*/
+	padding: 0;
+	max-width: 373px;
+}
+
+
+
+
+
+
+.logos-section-cont {
+	/*padding: 0 75px;*/
+}
+
+.logo-section__title {
+	padding: 0 75px;
+}
+
+.logos-gallery-cont {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0 45px;
+}
+
+.logo-image-cont {
+	height: 100px;
+	width: 20%;
+	max-width: 200px;
+	min-width: 100px;
+	margin: 15px 30px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+
+
+
+
+
+.site-footer {
+	color: #fff;
+}
+
+.footer__content-cont {
+	background-color: #717275;
+	padding: 50px 75px;
+}
+
+.footer__logo {
+	width: 180px;
+	margin-bottom: 5px;
+}
+
+.footer__content-cont span {
+	display: block;
+	font-size: 14px;
+}
+
+.footer__team-members {
+	display: flex;
+	/*justify-content: space-between;*/
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.footer__team-member-cont {
+	margin: 20px 70px 0 0;
 }

@@ -28,7 +28,7 @@ $team_members = get_field('team_members');
 ?>
 		
 		<div class="footer__content-cont">
-			<div class="footer__logo"><?php	the_custom_logo(); ?></div>
+			<div class="footer__logo"><img alt="O3 Logo" src="<?php	echo get_template_directory_uri() . '/images/o3_footer-logo.png' ?>"></div>
 			<div class="footer__contact-info">
 				<span class="footer__address-line1"><?php echo $address_line1; ?></span>
 				<span class="footer__address-line2"><?php echo $address_line2; ?></span>
