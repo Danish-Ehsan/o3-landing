@@ -26,48 +26,33 @@ get_header();
 			?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-					<?php operation_o3_post_thumbnail(); ?>
-
 					<div class="entry-content">
 						<?php
 						the_content();
-
-						wp_link_pages(
-							array(
-								'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'operation-o3' ),
-								'after'  => '</div>',
-							)
-						);
 						?>
 					</div><!-- .entry-content -->
-
-					<?php if ( get_edit_post_link() ) : ?>
-						<footer class="entry-footer">
-							<?php
-							edit_post_link(
-								sprintf(
-									wp_kses(
-										/* translators: %s: Name of current post. Only visible to screen readers */
-										__( 'Edit <span class="screen-reader-text">%s</span>', 'operation-o3' ),
-										array(
-											'span' => array(
-												'class' => array(),
-											),
-										)
-									),
-									wp_kses_post( get_the_title() )
-								),
-								'<span class="edit-link">',
-								'</span>'
-							);
+					
+					<?php  
+						$logos_section_title = get_field('logo_section_title');
+						$logo_images = get_field('logo_image_gallery');
+						
+						if ($logo_images) :
+					?>
+					<div class="logos-section-cont">
+						<h3 class="logo-section__title"><?php echo $logos_section_title; ?></h3>
+						<div class="logos-gallery-cont">
+							<?php foreach( $logo_images as $logo_image) {
+								echo '<div class="logo-image-cont" style="background-image: ' . $logo_image . '"></div>';
+							}
 							?>
-						</footer><!-- .entry-footer -->
+						</div>
+					</div>
 					<?php endif; ?>
+
 				</article><!-- #post-<?php the_ID(); ?> -->
 			<?php
 
 			endwhile;
-
 
 		else :
 
