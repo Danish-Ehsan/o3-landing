@@ -32,5 +32,5 @@
 			the_custom_logo();
 			?>
 		</div><!-- .site-branding -->
-		<a class="header__contact-btn">Contact Us</a>
+		<a class="header__contact-btn" href="mailto:elarva@operationso3.com">Contact Us</a>
 	</header><!-- #masthead -->
