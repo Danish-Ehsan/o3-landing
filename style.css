@@ -990,6 +990,7 @@ html, body {
 	font-size: 18px;
 	color: #000;
 	box-sizing: border-box;
+	width: 100%;
 }
 
 body {
@@ -1072,6 +1073,19 @@ a:hover {
 
 
 
+.is-type-video, .wp-block-video {
+	width: 100%;
+	height: 800px;
+}
+
+.is-type-video *, .wp-block-video * {
+	width: 100%;
+	height: 800px;
+}
+
+
+
+
 
 .wp-block-columns {
 	padding: 0 75px;
@@ -1086,7 +1100,6 @@ a:hover {
 
 .wp-block-column > .wp-block-columns {
 	margin: 30px 0;
-/*	padding: 0 156px 0 0;*/
 	padding: 0;
 	max-width: 373px;
 }
@@ -1155,4 +1168,138 @@ a:hover {
 
 .footer__team-member-cont {
 	margin: 20px 70px 0 0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+	
+	h2 {
+		max-width: 80%;
+		font-size: 22px;
+	}
+	
+	p {
+		max-width: 80%;
+	}
+	
+	
+	
+	
+	
+	.wp-block-columns {
+		padding: 50px 40px;
+		margin: 0;
+	}
+	
+	.wp-block-columns p {
+		max-width: none;
+	}
+	
+	
+	
+	
+	
+	.is-type-video, .wp-block-video {
+		height: 500px;
+	}
+
+	.is-type-video *, .wp-block-video * {
+		height: 500px;
+	}
+	
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+	
+	body {
+		padding: 0 15px;
+	}
+	
+	.site-header {
+		padding: 20px 10px;
+	}
+	
+	.header__logo {
+		width: 145px;
+	}
+	
+	.header__contact-btn {
+		font-size: 11px;
+	}
+	
+	
+	
+	
+	
+	h2 {
+		max-width: 90%;
+		font-size: 21px;
+		margin-top: 30px;
+	}
+	
+	p {
+		max-width: 90%;
+	}
+	
+	
+	
+	
+	
+	.wp-block-columns {
+		padding: 35px 0;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	.wp-block-column p {
+		text-align: center;
+	}
+	
+	.wp-block-column > .wp-block-columns {
+		max-width: none;
+	}
+	
+	.wp-block-column > .wp-block-columns > .wp-block-column {
+		max-width: 50%;
+		flex-basis: 50% !important;
+	}
+	
+	
+	
+	
+	
+	.is-type-video, .wp-block-video {
+		height: 250px;
+	}
+
+	.is-type-video *, .wp-block-video * {
+		height: 250px;
+	}
+	
+	
+	
+	
+	
+	.logo-section__title {
+		padding: 0;
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.logos-gallery-cont {
+		padding: 0;
+		width: 90%;
+		margin: 0 auto;
+	}
+	
 }
