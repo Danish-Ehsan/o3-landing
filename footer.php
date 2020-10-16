@@ -32,15 +32,15 @@ $team_members = get_field('team_members');
 			<div class="footer__contact-info">
 				<span class="footer__address-line1"><?php echo $address_line1; ?></span>
 				<span class="footer__address-line2"><?php echo $address_line2; ?></span>
-				<span class="footer__phone-number"><?php echo $phone_number; ?></span>
+				<span class="footer__phone-number"><a href="tel:<?php echo $phone_number; ?>"><?php echo $phone_number; ?></a></span>
 			</div>
 			<?php if ($team_members) : ?>
 			<div class="footer__team-members">
 				<?php foreach ($team_members as $team_member) : ?>
 				<div class="footer__team-member-cont">
 					<span class="footer__team-member-name"><?php echo $team_member['name']; ?></span>
-					<span class="footer__team-member-phone-number"><?php echo $team_member['phone_number']; ?></span>
-					<span class="footer__team-member-email"><?php echo $team_member['email_address']; ?></span>
+					<span class="footer__team-member-phone-number"><a href="tel:<?php echo $team_member['phone_number']; ?>"><?php echo $team_member['phone_number']; ?></a></span>
+					<span class="footer__team-member-email"><a href="mailto:<?php echo $team_member['email_address']; ?>"><?php echo $team_member['email_address']; ?></a></span>
 				</div>
 				<?php endforeach; ?>
 			</div>
